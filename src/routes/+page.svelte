@@ -2,6 +2,7 @@
   import { products } from '$lib/data';
 
   const featured = products[0];
+  const previewProducts = products.slice(1, 4);
 </script>
 
 <svelte:head>
@@ -13,22 +14,21 @@
     <div class="hero-copy">
       <p class="eyebrow">Bike Store</p>
       <h1>
-        Hip bikes,
-        <span>cleaner pages.</span>
+        Hip killer bikes
+        <span>and clever merch with a nasty little grin.</span>
       </h1>
       <p class="lede">
-        The storefront keeps the same tone, but the structure is calmer now.
-        Shared layout, consistent header, and a proper products route instead
-        of two pages arguing with each other.
+        Carbon menace. Alleycat posture. Apparel for people who think a bell is
+        too polite. We sell complete bikes, cursed upgrades, and wearable contempt.
       </p>
       <div class="actions">
-        <a class="button primary" href="/products">Browse products</a>
-        <a class="button secondary" href="/products#sticker">See the sticker</a>
+        <a class="button primary" href="/products">Shop the damage</a>
+        <a class="button secondary" href="/products/{featured.slug}">See the sticker</a>
       </div>
       <div class="hero-stats">
-        <span>Shared header</span>
-        <span>SvelteKit 5</span>
-        <span>Simple catalog</span>
+        <span>Petty product drops</span>
+        <span>Mean little objects</span>
+        <span>Fast bikes</span>
       </div>
     </div>
 
@@ -46,28 +46,27 @@
     </div>
   </section>
 
-  <section class="section-grid">
-    <article class="section-card">
-      <p class="eyebrow">Products</p>
-      <h3>Simple route structure</h3>
-      <p>
-        Home lives at <span class="accent">/</span> and the grid lives at
-        <span class="accent">/products</span>.
-      </p>
-    </article>
-    <article class="section-card">
-      <p class="eyebrow">Design</p>
-      <h3>Dialed down, not dead</h3>
-      <p>
-        Same warm palette and edge, but less visual shouting on the product listing.
-      </p>
-    </article>
-    <article class="section-card">
-      <p class="eyebrow">Merch</p>
-      <h3>Sticker first</h3>
-      <p>
-        The new decal is treated like a real product instead of a full-page stunt.
-      </p>
-    </article>
+  <section class="home-section">
+    <div class="home-section-heading">
+      <div>
+        <p class="eyebrow">Merch Drop</p>
+        <h2>Spiteful, clever bike merch.</h2>
+      </div>
+      <a class="button secondary" href="/products">Browse all products</a>
+    </div>
+
+    <div class="section-grid">
+      {#each previewProducts as product}
+        <a class="section-card product-preview" href="/products/{product.slug}">
+          {#if product.image}
+            <img class="preview-image" src={product.image} alt={product.imageAlt} />
+          {/if}
+          <p class="eyebrow">{product.category}</p>
+          <h3>{product.name}</h3>
+          <p>{product.description}</p>
+          <p class="price">{product.price}</p>
+        </a>
+      {/each}
+    </div>
   </section>
 </main>

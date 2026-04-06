@@ -268,6 +268,17 @@ h3 {
   margin-top: 1rem;
 }
 
+.home-section {
+  margin-top: 1.25rem;
+}
+
+.home-section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: end;
+}
+
 .products-layout {
   display: grid;
   grid-template-columns: 16rem 1fr;
@@ -342,6 +353,21 @@ h3 {
   background: var(--surface-strong);
 }
 
+.product-link {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.product-link:hover,
+.product-link:focus-visible,
+.product-preview:hover,
+.product-preview:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(216, 91, 41, 0.28);
+}
+
 .product-card.featured {
   grid-column: span 3;
   display: grid;
@@ -397,6 +423,18 @@ h3 {
   line-height: 1.55;
 }
 
+.preview-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-preview {
+  display: block;
+}
+
 .product-meta {
   justify-content: space-between;
   align-items: center;
@@ -429,16 +467,70 @@ h3 {
   color: var(--muted);
 }
 
+.product-page {
+  padding-top: 2rem;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 1rem;
+}
+
+.detail-image,
+.detail-copy {
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.detail-image {
+  width: 100%;
+  min-height: 28rem;
+  object-fit: cover;
+  background: var(--surface-strong);
+}
+
+.detail-sticker {
+  margin: 0;
+  min-height: 28rem;
+  padding: 1.5rem;
+}
+
+.detail-placeholder {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #f5efe3, #fffaf1);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.detail-copy {
+  padding: 1.5rem;
+  background: var(--surface);
+}
+
 @media (max-width: 960px) {
   .hero,
   .products-layout,
   .section-grid,
+  .product-detail,
   .product-card.featured,
   .products-grid {
     grid-template-columns: 1fr;
   }
 
   .search-row,
+  .home-section-heading,
   .site-header,
   .site-footer {
     flex-direction: column;

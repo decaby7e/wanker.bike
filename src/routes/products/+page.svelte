@@ -13,25 +13,17 @@
   <section class="search-row">
     <div>
       <p class="eyebrow">Products</p>
-      <h1>
-        A simple
-        <span>product grid.</span>
-      </h1>
-      <p class="lede">
-        Straight catalog layout, quieter presentation, and a shared header that
-        behaves the same as the home page.
-      </p>
+      <h1>Products</h1>
     </div>
 
     <form class="search-box" action="/products" method="get">
-      <input aria-label="Search products" name="keyword" type="text" value="sticker" />
+      <input aria-label="Search products" name="keyword" type="text" value="" placeholder="Search products" />
       <button class="button primary" type="submit">Search</button>
     </form>
   </section>
 
   <div class="toolbar">
     <span class="pill">{products.length} products</span>
-    <span class="subtle">Minimal grid, no fake marketplace clutter.</span>
   </div>
 
   <section class="products-layout">
@@ -51,7 +43,7 @@
 
     <div class="products-grid" id="grid">
       {#if featured}
-        <article class="product-card featured" id="sticker">
+        <a class="product-card featured product-link" id="sticker" href="/products/{featured.slug}">
           <div class="product-image sticker-image">
             <div class="sticker-bar"></div>
             <p>BICYCLE LANE</p>
@@ -72,11 +64,11 @@
               {/each}
             </div>
           </div>
-        </article>
+        </a>
       {/if}
 
       {#each standardProducts as product}
-        <article class="product-card">
+        <a class="product-card product-link" href="/products/{product.slug}">
           {#if product.image}
             <img class="product-image" src={product.image} alt={product.imageAlt} />
           {/if}
@@ -88,7 +80,7 @@
             <h3>{product.name}</h3>
             <p>{product.description}</p>
           </div>
-        </article>
+        </a>
       {/each}
     </div>
   </section>
