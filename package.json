@@ -1,0 +1,22 @@
+{
+  "name": "wanker-bike",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "env -u NODE_OPTIONS vite dev",
+    "build": "env -u NODE_OPTIONS vite build",
+    "preview": "env -u NODE_OPTIONS vite preview",
+    "prepare": "env -u NODE_OPTIONS svelte-kit sync || echo ''",
+    "check": "env -u NODE_OPTIONS svelte-kit sync && env -u NODE_OPTIONS svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.50.2",
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "svelte": "^5.54.0",
+    "svelte-check": "^4.4.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}
