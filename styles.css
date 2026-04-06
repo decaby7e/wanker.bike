@@ -513,6 +513,116 @@ h2 {
   padding: 2rem 0 4rem;
 }
 
+.shop-hero {
+  width: min(1180px, calc(100vw - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.shop-hero-panel,
+.shop-card {
+  border-radius: 1.5rem;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.shop-hero-panel {
+  padding: 1.5rem;
+  background:
+    linear-gradient(160deg, rgba(16, 16, 16, 0.96), rgba(41, 31, 24, 0.94)),
+    linear-gradient(180deg, rgba(255, 107, 44, 0.28), transparent);
+  color: var(--cream);
+  display: grid;
+  align-content: end;
+}
+
+.shop-hero-panel p {
+  color: rgba(255, 246, 232, 0.8);
+}
+
+.shop-section {
+  padding-top: 1rem;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.shop-grid-compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.shop-card {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.shop-card-featured {
+  background: linear-gradient(180deg, #fff8ed, #f7eddc);
+}
+
+.shop-card-image {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  display: block;
+}
+
+.shop-card-copy {
+  padding: 1.2rem;
+}
+
+.shop-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.sticker-face {
+  margin: 1.2rem;
+  padding: 1rem;
+  min-height: 15rem;
+  border-radius: 1.2rem;
+  background: #f3f0e8;
+  border: 3px solid var(--ink);
+  display: grid;
+  align-content: start;
+  gap: 0.35rem;
+  box-shadow: inset 0 0 0 8px rgba(16, 16, 16, 0.04);
+}
+
+.sticker-face p {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(1.6rem, 2.3vw, 2.4rem);
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+}
+
+.sticker-bar {
+  width: 4.5rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  background: var(--orange);
+  margin-bottom: 0.3rem;
+}
+
+.text-card {
+  display: grid;
+  align-items: center;
+  background:
+    radial-gradient(circle at top right, rgba(217, 255, 87, 0.46), transparent 32%),
+    rgba(255, 255, 255, 0.5);
+}
+
 .footer-links {
   display: grid;
   gap: 0.4rem;
@@ -531,8 +641,10 @@ h2 {
 
 @media (max-width: 960px) {
   .hero,
+  .shop-hero,
   .featured-merch,
   .product-grid,
+  .shop-grid,
   .ethos-grid,
   .site-footer,
   .section-heading.split {
