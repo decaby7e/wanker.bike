@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wanker.Bike Shopping | Mean Merch, Fast Checkout Energy</title>
+    <title>Wanker.Bike Products | Mean Merch, Fast Checkout Energy</title>
     <meta
       name="description"
       content="Shop stickers, socks, caps, bottles, and other bike-store irritants from Wanker.Bike."
@@ -23,182 +23,190 @@
         <span class="brand-mark">WB</span>
         <span class="brand-text">
           <strong>WANKER.BIKE</strong>
-          <small>Shopping for bike weirdos</small>
+          <small>Products for bike weirdos</small>
         </span>
       </a>
       <nav class="nav">
         <a href="./index.html">Home</a>
-        <a href="./shop.html">Shopping</a>
-        <a href="#stickers">Stickers</a>
-        <a href="#gear">Gear</a>
+        <a href="./shop.html">Products</a>
+        <a href="#products-grid">Listings</a>
+        <a href="mailto:shop@wanker.bike">Contact</a>
       </nav>
     </header>
 
-    <main>
-      <section class="shop-hero">
-        <div class="shop-hero-copy">
-          <p class="eyebrow">Shopping Page</p>
+    <main class="products-shell">
+      <section class="products-topbar">
+        <div>
+          <p class="eyebrow">Products</p>
           <h1>
-            Buy something
-            <span>petty, useful, or both.</span>
+            Search results
+            <span>for rude little objects.</span>
           </h1>
           <p class="lede">
-            Minimal grid. Same loud shop energy. The first item is your new
-            sticker for reminding everyone what a bike lane definitely is not.
+            Less hero section, more catalog. The sticker is at the top because
+            it should be.
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#stickers">See Stickers</a>
-            <a class="button button-secondary" href="./index.html">Back To Storefront</a>
-          </div>
         </div>
+        <form class="search-bar" action="./shop.html" method="get">
+          <input type="text" name="keyword" value="stickers" aria-label="Search products" />
+          <button class="button button-primary" type="submit">Search</button>
+        </form>
+      </section>
 
-        <div class="shop-hero-panel">
-          <span class="display-label">Fresh nuisance</span>
-          <h2>BICYCLE LANE BICYCLES ONLY SCOOTERS OKAY DOORDASH PARKING OK</h2>
-          <p>
-            6-inch weatherproof sticker, matte laminate, designed for frames,
-            laptops, poles, helmets, and passive-aggressive civic outreach.
-          </p>
-          <div class="product-meta">
-            <strong>$6</strong>
-            <span>or 3 for $15</span>
-          </div>
+      <section class="products-toolbar" aria-label="Results summary">
+        <p><strong>8 products</strong> matching your poor judgment</p>
+        <div class="toolbar-pills">
+          <span class="toolbar-pill is-active">Relevance</span>
+          <span class="toolbar-pill">Newest</span>
+          <span class="toolbar-pill">Price</span>
         </div>
       </section>
 
-      <section class="section shop-section" id="stickers">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Stickers</p>
-            <h2>Small adhesive hostility.</h2>
+      <section class="products-layout">
+        <aside class="filters-panel" aria-label="Filters">
+          <div class="filter-block">
+            <span class="product-tag">Category</span>
+            <a class="filter-link is-active" href="#products-grid">All products</a>
+            <a class="filter-link" href="#stickers">Stickers</a>
+            <a class="filter-link" href="#gear">Apparel</a>
+            <a class="filter-link" href="#gear">Gear</a>
           </div>
-          <p class="section-note">
-            Waterproof. Loud. Designed to survive rain and weak management.
-          </p>
-        </div>
+          <div class="filter-block">
+            <span class="product-tag">Condition</span>
+            <p>New only. Nobody wants used socks from this site.</p>
+          </div>
+          <div class="filter-block">
+            <span class="product-tag">Price</span>
+            <p>$6 to $42</p>
+          </div>
+        </aside>
 
-        <div class="shop-grid">
-          <article class="shop-card shop-card-featured">
-            <div class="sticker-face">
+        <section class="products-grid" id="products-grid">
+          <article class="listing-card listing-card-featured" id="stickers">
+            <div class="listing-image sticker-face">
               <div class="sticker-bar"></div>
               <p>BICYCLE LANE</p>
               <p>BICYCLES ONLY</p>
               <p>SCOOTERS OKAY</p>
               <p>DOORDASH PARKING OK</p>
             </div>
-            <div class="shop-card-copy">
-              <span class="product-tag">New Sticker</span>
-              <h3>Bicycle Lane Bureaucracy Decal</h3>
-              <p>
-                Deadpan traffic-sign energy with exactly enough nonsense to make
-                drivers, app couriers, and city planners feel seen.
+            <div class="listing-copy">
+              <div class="listing-meta-row">
+                <span class="listing-badge">New</span>
+                <span class="listing-muted">Free shipping on 3-pack</span>
+              </div>
+              <h2>Bicycle Lane Bureaucracy Decal</h2>
+              <p class="listing-price">$6.00</p>
+              <p class="listing-description">
+                Weatherproof vinyl sticker for laptops, frames, windows, and
+                public-facing pettiness.
               </p>
-              <div class="shop-card-footer">
-                <strong>$6</strong>
-                <span>Weatherproof vinyl</span>
+              <div class="listing-specs">
+                <span>6 in.</span>
+                <span>Matte laminate</span>
+                <span>Outdoor rated</span>
               </div>
             </div>
           </article>
 
-          <article class="shop-card">
+          <article class="listing-card">
             <img
-              class="shop-card-image"
+              class="listing-image"
               src="https://images.unsplash.com/photo-1560847581-19fd6f636822?auto=format&fit=crop&w=1200&q=80"
               alt="Black t-shirt merch photo"
             />
-            <div class="shop-card-copy">
-              <span class="product-tag">Apparel</span>
-              <h3>STOP WHEEZING Tee</h3>
-              <p>Boxy cotton shirt for climbs, coffee rides, and poor impulse control.</p>
-              <div class="shop-card-footer">
-                <strong>$42</strong>
-                <span>Heavyweight cotton</span>
+            <div class="listing-copy">
+              <div class="listing-meta-row">
+                <span class="listing-badge">Apparel</span>
+                <span class="listing-muted">12 sold</span>
               </div>
+              <h3>STOP WHEEZING Tee</h3>
+              <p class="listing-price">$42.00</p>
+              <p class="listing-description">
+                Heavyweight cotton tee with chest print for group rides and poor restraint.
+              </p>
             </div>
           </article>
 
-          <article class="shop-card">
+          <article class="listing-card">
             <img
-              class="shop-card-image"
+              class="listing-image"
               src="https://images.unsplash.com/photo-1585499583264-491df5142e83?auto=format&fit=crop&w=1200&q=80"
               alt="Colorful socks hanging on a line"
             />
-            <div class="shop-card-copy">
-              <span class="product-tag">Footwear</span>
-              <h3>PASS FASTER Socks</h3>
-              <p>Thin race socks with enough visual volume to start a fight on sight.</p>
-              <div class="shop-card-footer">
-                <strong>$18</strong>
-                <span>Combed cotton</span>
+            <div class="listing-copy">
+              <div class="listing-meta-row">
+                <span class="listing-badge">Footwear</span>
+                <span class="listing-muted">Low stock</span>
               </div>
+              <h3>PASS FASTER Socks</h3>
+              <p class="listing-price">$18.00</p>
+              <p class="listing-description">
+                Thin race socks with enough color and contempt to do the work for you.
+              </p>
             </div>
           </article>
-        </div>
-      </section>
 
-      <section class="section shop-section" id="gear">
-        <div class="section-heading">
-          <p class="eyebrow">Gear</p>
-          <h2>Useful objects with a worse attitude.</h2>
-        </div>
-
-        <div class="shop-grid shop-grid-compact">
-          <article class="shop-card">
+          <article class="listing-card" id="gear">
             <img
-              class="shop-card-image"
+              class="listing-image"
               src="https://images.unsplash.com/photo-1627733041826-77dd65dc5a19?auto=format&fit=crop&w=1200&q=80"
               alt="Black cap photographed on dark clothing"
             />
-            <div class="shop-card-copy">
-              <span class="product-tag">Cap</span>
-              <h3>APEX PEST Cap</h3>
-              <p>Five-panel cap for rides that begin as errands and end as arguments.</p>
-              <div class="shop-card-footer">
-                <strong>$34</strong>
-                <span>Low profile</span>
+            <div class="listing-copy">
+              <div class="listing-meta-row">
+                <span class="listing-badge">Cap</span>
+                <span class="listing-muted">Ready to ship</span>
               </div>
+              <h3>APEX PEST Cap</h3>
+              <p class="listing-price">$34.00</p>
+              <p class="listing-description">
+                Five-panel cap for rides that become debates by mile four.
+              </p>
             </div>
           </article>
 
-          <article class="shop-card">
+          <article class="listing-card">
             <img
-              class="shop-card-image"
+              class="listing-image"
               src="https://images.unsplash.com/photo-1700506844069-6da3871c78e4?auto=format&fit=crop&w=1200&q=80"
               alt="Glass water bottle displayed on a rock by a stream"
             />
-            <div class="shop-card-copy">
-              <span class="product-tag">Bottle</span>
-              <h3>HATE TAILGATES Bottle</h3>
-              <p>Hydration for commuters and a very mild threat for motorists.</p>
-              <div class="shop-card-footer">
-                <strong>$24</strong>
-                <span>Insulated</span>
+            <div class="listing-copy">
+              <div class="listing-meta-row">
+                <span class="listing-badge">Bottle</span>
+                <span class="listing-muted">Insulated</span>
               </div>
+              <h3>HATE TAILGATES Bottle</h3>
+              <p class="listing-price">$24.00</p>
+              <p class="listing-description">
+                Hydration gear with cleaner lines and worse intentions.
+              </p>
             </div>
           </article>
 
-          <article class="shop-card text-card">
-            <div class="shop-card-copy">
-              <span class="product-tag">Bundle</span>
-              <h3>Sticker Starter Pack</h3>
-              <p>
-                Includes the new lane sticker, a logo slap, and one mystery
-                rectangle for whatever surface in your life deserves it most.
-              </p>
-              <div class="shop-card-footer">
-                <strong>$15</strong>
-                <span>3-pack</span>
+          <article class="listing-card listing-card-text">
+            <div class="listing-copy">
+              <div class="listing-meta-row">
+                <span class="listing-badge">Bundle</span>
+                <span class="listing-muted">Best value</span>
               </div>
+              <h3>Sticker Starter Pack</h3>
+              <p class="listing-price">$15.00</p>
+              <p class="listing-description">
+                Includes the lane decal, logo slap, and one mystery rectangle
+                for a surface that deserves correction.
+              </p>
             </div>
           </article>
-        </div>
+        </section>
       </section>
     </main>
 
     <footer class="site-footer">
       <div>
         <p class="eyebrow">Exit</p>
-        <h2>Leave with stickers.</h2>
+        <h2>Leave with products.</h2>
       </div>
       <div class="footer-links">
         <a href="./index.html">Main storefront</a>
