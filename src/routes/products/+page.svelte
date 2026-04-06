@@ -31,7 +31,8 @@
       <div class="filter-group">
         <p class="eyebrow">Category</p>
         <a class="filter-link active" href="/products">All products</a>
-        <a class="filter-link" href="#sticker">Sticker</a>
+        <a class="filter-link" href="#sticker">Bike stickers</a>
+        <a class="filter-link" href="#grid">Car stickers</a>
         <a class="filter-link" href="#grid">Apparel</a>
         <a class="filter-link" href="#grid">Gear</a>
       </div>

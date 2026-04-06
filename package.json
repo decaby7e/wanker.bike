@@ -8,7 +8,8 @@
     "build": "env -u NODE_OPTIONS vite build",
     "preview": "env -u NODE_OPTIONS vite preview",
     "prepare": "env -u NODE_OPTIONS svelte-kit sync || echo ''",
-    "check": "env -u NODE_OPTIONS svelte-kit sync && env -u NODE_OPTIONS svelte-check --tsconfig ./tsconfig.json"
+    "check": "env -u NODE_OPTIONS svelte-kit sync && env -u NODE_OPTIONS svelte-check --tsconfig ./tsconfig.json",
+    "backend:dev": "python3 -m uvicorn backend.app:app --reload"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.10",

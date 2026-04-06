@@ -2,7 +2,7 @@
   import { products } from '$lib/data';
 
   const featured = products[0];
-  const previewProducts = products.slice(1, 4);
+  const previewProducts = products.slice(1, 5);
 </script>
 
 <svelte:head>
@@ -19,7 +19,8 @@
       </h1>
       <p class="lede">
         Carbon menace. Alleycat posture. Apparel for people who think a bell is
-        too polite. We sell complete bikes, cursed upgrades, and wearable contempt.
+        too polite. We sell complete bikes, cursed upgrades, bike stickers, and
+        car stickers for drivers who insist on embarrassing themselves in public.
       </p>
       <div class="actions">
         <a class="button primary" href="/products">Shop the damage</a>
@@ -50,7 +51,7 @@
     <div class="home-section-heading">
       <div>
         <p class="eyebrow">Merch Drop</p>
-        <h2>Spiteful, clever bike merch.</h2>
+        <h2>Spiteful stickers and clever merch.</h2>
       </div>
       <a class="button secondary" href="/products">Browse all products</a>
     </div>

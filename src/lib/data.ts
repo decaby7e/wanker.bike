@@ -15,7 +15,7 @@ export const products: Product[] = [
   {
     slug: 'bicycle-lane-bureaucracy-decal',
     name: 'Bicycle Lane Bureaucracy Decal',
-    category: 'Sticker',
+    category: 'Bike Sticker',
     price: '$6',
     description:
       'Weatherproof vinyl sticker with deadpan traffic-sign energy for frames, laptops, and passive-aggressive infrastructure critique.',
@@ -23,6 +23,17 @@ export const products: Product[] = [
       'A six-inch vinyl sticker for anyone who has watched a bike lane become a loading zone, scooter corral, and amateur valet stand within the same block. Matte finish, sharp black type, and enough civic resentment to survive bad weather.',
     featured: true,
     specs: ['6 in.', 'Matte laminate', 'Outdoor rated']
+  },
+  {
+    slug: 'i-tinted-my-license-plate-because-im-as-good-a-person-as-a-driver-decal',
+    name: `I TINTED MY LICENSE PLATE BECAUSE I'M AS GOOD A PERSON AS A DRIVER`,
+    category: 'Car Sticker',
+    price: '$7',
+    description:
+      'Weatherproof car sticker for drivers who would rather self-report than improve.',
+    longDescription:
+      'A car sticker for the exact genre of driver who darkens their plate, drives like a pest, and then acts shocked when judged correctly. Same durable vinyl treatment as the bike lane sticker, just aimed squarely at automotive nonsense.',
+    specs: ['7 in.', 'Weatherproof vinyl', 'Rear-window friendly']
   },
   {
     slug: 'stop-wheezing-tee',
